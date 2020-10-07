@@ -91,20 +91,24 @@ app.get("/div", function (req, res) {
 
 //     next();
 //   });
+const bcrypt = require("bcrypt");
 
 app.use(express.urlencoded({ extended: true }));
 post1.use(express.urlencoded({ extended: true }));
 post2.use(express.urlencoded({ extended: true }));
 
 post1.post("/login", function (req, res, next) {
+  const saltRounds = 11;
   var name = req.body.name;
   var email = req.body.email;
   var password = req.body.password;
+  const hashPassword = bcrypt.hashSync(password, saltRounds);
   userDb.push({
     name: name,
     email: email,
-    password: password,
+    password: hashPassword,
   });
+
   if (req.body.password === req.body.confirmPassword) {
     console.log("post1 , both password is same");
     res.json(userDb);
