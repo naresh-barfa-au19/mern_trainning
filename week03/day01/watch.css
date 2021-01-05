@@ -1,0 +1,17 @@
+#dym {
+  padding: 100px;
+
+  border: 2px solid black;
+  text-align: center;
+  background-color: gainsboro;
+}
+#wrd {
+  padding: 40px;
+  border: 2px solid black;
+  text-align: center;
+
+  background-color: gainsboro;
+}
+div {
+  text-align: center;
+}

@@ -1,0 +1,28 @@
+body {
+  background-image: url("./assets/bcg2.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#nb {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#img1,
+#img2,
+#img3,
+#img4,
+#img5 {
+  border: black solid 1px;
+
+  width: 200px;
+  height: 200px;
+}
+p {
+  outline-style: double;
+  word-spacing: 10px;
+  text-transform: lowercase;
+}
