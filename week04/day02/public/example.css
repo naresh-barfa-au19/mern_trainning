@@ -1,0 +1,31 @@
+.main-div {
+  background-color: cadetblue;
+}
+h2 {
+  text-align: center;
+}
+.div1,
+.div2,
+.div3 {
+  height: 550px;
+  float: left;
+  margin-block: inline;
+  border: black solid 1px;
+}
+.div1 {
+  width: 25%;
+}
+.div2 {
+  width: 50%;
+}
+.div3 {
+  width: 24%;
+}
+img {
+  width: 270px;
+  height: 300px;
+  padding-left: 5%;
+}
+h3 {
+  text-align: center;
+}
